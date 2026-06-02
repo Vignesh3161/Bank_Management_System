@@ -7,7 +7,11 @@ export default defineConfig({
   server: {
     host: '0.0.0.0',
     port: process.env.PORT ? parseInt(process.env.PORT) : 5173,
-    strictPort: true
+    strictPort: true,
+    allowedHosts: [
+      'bank-management-system-19dp.onrender.com',
+      '.onrender.com'
+    ]
   },
   preview: {
     host: '0.0.0.0',
